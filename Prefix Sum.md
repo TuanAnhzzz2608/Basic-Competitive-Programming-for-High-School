@@ -13,12 +13,14 @@ II. Prefix Sum Array on a Sequence
 #   Then the sequence s0, s1, ..., sn is called the (one-dimensional) prefix sum array of the sequence a1, a2, ..., an
 #    Constructing a prefix sum array on a sequence   
 
+        ```cpp
         si = a1 + a2 + ... + ai-1 + ai
         si = (a1 + a2 + ... + ai-1) + ai
         si = (si-1) + ai
 
 #    Coding a prefix sum array on a sequence:
-    
+
+    ```cpp
     s[0] = 0;
     for(i = 1; i <= n; ++i)
         s[i] = s[i - 1] + a[i];
@@ -28,12 +30,13 @@ III. Prefix Sum Array on a Natrix
     Consider a rectangular matrix 𝐴 with n rows and m columns. The element at row i, column j has the value aij, where 1 <= i <= n and 1 <= j <= m.
     The matrix 𝑆 is called the two-dimensional prefix sum array of the matrix 𝐴
     Formula for calculating a two-dimensional prefix sum array
-        
+
         s[i][j] = s[i][j - 1] + s[i - 1][j] - s[i - 1][j - 1] + a[i][j]
 
 
 #    Constructing a two-dimensional prefix sum array
 
+        ```cpp
         s[i][j] = 0;
         for (i = 1; i <= n; ++i)
             for (j = 1; j <= m; ++j)
