@@ -17,3 +17,6 @@ The sequence of values `s0, s1, ..., sn` is defined as:
 ```text
 s0 = 0
 si = a0 + a1 + ... + ai
+```
+
+abc
