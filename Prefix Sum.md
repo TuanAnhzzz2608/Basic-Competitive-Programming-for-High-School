@@ -2,10 +2,12 @@
 
 Source: Trương Phước Hải
 
+
 ## I. What is Prefix Sum ?
 
 A **prefix sum array** is a data structure that stores the cumulative sum of elements in a set, starting from the first element.  
 It allows **efficient computation of the sum of a consecutive group of elements**.
+
 
 ## II. Prefix Sum Array on a Sequence
 
@@ -32,6 +34,7 @@ Coding a prefix sum array on a sequence:
         s[i] = s[i - 1] + a[i];
 ```
 Complexity: O(n)
+
 
 ## III. Prefix Sum Array on a Matrix
 
