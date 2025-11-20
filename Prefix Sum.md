@@ -5,24 +5,23 @@ I. What is Prefix Sum ?
     A prefix sum array allows efficient computation of the sum of a consecutive group of elements.
 
 II. Prefix sum array on a sequence
-Consider a sequence of values a0, a1, ..., an. The sequence of values s0, s1, ..., sn is defined as: 
-
-    s0 = 0
-    i = a0 + a1 + ... + ai 
-
-
-Then the sequence s0, s1, ..., sn is called the (one-dimensional) prefix sum array of the sequence a1, a2, ..., an
-Constructing a prefix sum array on a sequence   
+    Consider a sequence of values a0, a1, ..., an. The sequence of values s0, s1, ..., sn is defined as: 
     
-    si = a1 + a2 + ... + ai-1 + ai
-    si = (a1 + a2 + ... + ai-1) + ai
-    si = (si-1) + ai
+            s0 = 0
+            i = a0 + a1 + ... + ai 
 
-Coding a prefix sum array on a sequence:
+#   Then the sequence s0, s1, ..., sn is called the (one-dimensional) prefix sum array of the sequence a1, a2, ..., an
+#    Constructing a prefix sum array on a sequence   
+
+        si = a1 + a2 + ... + ai-1 + ai
+        si = (a1 + a2 + ... + ai-1) + ai
+        si = (si-1) + ai
+
+#    Coding a prefix sum array on a sequence:
     
     s[0] = 0;
     for(i = 1; i <= n; ++i)
         s[i] = s[i - 1] + a[i];
-Complexity: O(n)
+#    Complexity: O(n)
 
 III. 
